@@ -15,8 +15,8 @@ db = client.get_database('SpotDraft')
 records = db.register
 files = db['files']
 app.config['S3_BUCKET'] = "pdfmanagementsystem"
-app.config['S3_KEY'] = "AKIAYNE5D3FBJPZSDTNT"
-app.config['S3_SECRET'] = "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"
+app.config['S3_KEY'] = "#####################"
+app.config['S3_SECRET'] = "##########################"
 app.config['S3_LOCATION'] = 'http://{}.s3.amazonaws.com/'.format('pdfmanagementsystem')
 s3 = boto3.client(
     "s3",
